@@ -1,17 +1,71 @@
-import React from 'react'
-import topext from '../../img/Top Extension for Logo.svg'
-import banner from '../../img/Presenting Banner@3x.png'
-// import leftbar from '../../img/Left Bar.svg'
-import './Main.css'
+import React from "react";
+import topext from "../../img/Top Extension for Logo.svg";
+import banner from "../../img/Presenting Banner@3x.png";
+import leftbar from "../../img/Left Bar.svg";
+import company from "../../img/Bandland Logo@3x.png";
+import green from "../../img/FAQ Base.svg";
+import arrowdown from "../../img/Faq Arrow white up.svg";
+import arrowup from "../../img/Faq Arrow (1).svg";
+import biggreen from "../../img/FAQ Basebig.svg";
+import "./Main.css";
 
-function Main() {
+function Main(props) {
+  
+  const handleToggle = (x) => {
+    props.handleToggle(x);
+  };
   return (
-    <div >
-      <img src={topext} alt="" srcset="" className='topext' />
-      <img src={banner} alt="" srcset="" className='banner'/>
-      {/* <img src={leftbar} alt="" srcset="" className='leftbar'/> */}
+    <div>
+      <img src={topext} alt="" className="topext" />
+      <img src={banner} alt="" className="banner" />
+      <div className="leftbar">
+        <img src={leftbar} alt="" />
+      </div>
+      <div className="rightbar">
+        <img src={leftbar} alt="" />
+      </div>
+      <img src={company} alt="" className="company" />
+      <div className="subtitle">EMBASSY INTERNATIONAL RIDING SCHOOL</div>
+      <div className="freq">FREQUENTLY ASKED QUESTIONS</div>
+      {props.toggle.map((value, index) => {
+        return (
+          <div className={"listitem" + index}>
+            {value ? (
+              <>
+                {" "}
+                <img src={green} alt="" className="green" />
+                <p className="text">What's Allowed</p>
+                <img
+                  src={arrowdown}
+                  alt=""
+                  className="arrow"
+                  onClick={() => handleToggle(index)}
+                />
+              </>
+            ) : (
+              <>
+                {" "}
+                <img src={biggreen} alt="" className="green"  />
+                <p className="textopen">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Labore consequuntur voluptatibus, sapiente deserunt in
+                  consectetur exercitationem ipsa cupiditate consequatur soluta
+                  perspiciatis dolor officia reprehenderit illum nesciunt sit
+                  magni non. Praesentium.
+                </p>
+                <img
+                  src={arrowup}
+                  alt=""
+                  className="arrow"
+                  onClick={() => handleToggle(index)}
+                />
+              </>
+            )}
+          </div>
+        );
+      })}
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;

@@ -1,13 +1,103 @@
-.topext{
+.topext {
+  position: absolute;
+  margin-top: -2179px;
+  margin-left: -150px;
+}
+.banner {
+  margin-top: -2023px;
+  margin-left: -484px;
+  position: absolute;
+}
+.leftbar {
+  height: 1325px;
+  overflow: hidden;
+  position: absolute;
+  margin-top: -1750px;
+  margin-left: 302px;
+}
+.rightbar {
+  height: 1319px;
+  overflow: hidden;
+  position: absolute;
+  margin-top: -1750px;
+  margin-left: 1245px;
+}
+.company {
+  position: absolute;
+  margin-top: -1828px;
+  margin-left: -294px;
+}
+.subtitle {
+  position: absolute;
+  text-align: center;
+  font: normal normal 800 20px/24px Texturina;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  width: 283px;
+  height: 50px;
+  margin-top: -1561px;
+  margin-left: 652px;
+}
+.freq {
+  position: absolute;
+  text-align: center;
+  font: normal normal normal 45px/64px Modesto Condensed;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-shadow: 3px 3px 0px #390c06;
+  opacity: 1;
+  margin-top: -1494px;
+  margin-left: 445px;
+}
+.green{
+    position: relative;
+}
+.arrow{
+    margin-left: -47px;
+    margin-top: 33px;
     position: absolute;
-    margin-top: -2179px;
-    margin-left: -150px;
 }
-.banner{
-    margin-top: -2023px;
-    margin-left: -484px;
+.open{
+    width: 600px;
+    height: 153px;
     position: absolute;
+    border: 2px solid black;
+    background-color: rgb(34,161,121);
+    color: white;
 }
-.leftbar{
-    
+.text{
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    margin-left: 141px;
+    margin-top: -72px;
 }
+.textopen{
+    position: absolute;
+    color: white;
+    margin-left: 30px;
+    margin-top: -292px;
+    font-size: 1.5rem;
+}
+.listitem0{
+    position: absolute;
+    margin-top: -1396px;
+    margin-left: 498px;
+}
+.listitem1{
+    position: absolute;
+    margin-top: -1296px;
+    margin-left: 498px; 
+}
+.listitem2{
+    position: absolute;
+    margin-top: -1196px;
+    margin-left: 498px;
+}
+.listitem3{
+    position: absolute;
+    margin-top: -1096px;
+    margin-left: 498px;
+}
+

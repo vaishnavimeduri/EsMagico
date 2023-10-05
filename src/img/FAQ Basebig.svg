@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600.43" height="402.903" viewBox="0 0 600.43 402.903">
+  <defs>
+    <filter id="FAQ_Base" x="0" y="0" width="600.43" height="402.903" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#390c06"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#FAQ_Base)">
+    <g id="FAQ_Base-2" data-name="FAQ Base" fill="#21a179">
+      <path d="M 597.9301147460938 400.4033508300781 L 0.4999804496765137 400.4033508300781 L 0.4999804496765137 0.5000447630882263 L 597.9301147460938 0.5000447630882263 L 597.9301147460938 400.4033508300781 Z" stroke="none"/>
+      <path d="M 1 0.999969482421875 L 1 399.9032897949219 L 597.4301147460938 399.9032897949219 L 597.4301147460938 0.999969482421875 L 1 0.999969482421875 M 0 -3.0517578125e-05 L 598.4301147460938 -3.0517578125e-05 L 598.4301147460938 400.9032897949219 L 0 400.9032897949219 L 0 -3.0517578125e-05 Z" stroke="none" fill="#390c06"/>
+    </g>
+  </g>
+</svg>
