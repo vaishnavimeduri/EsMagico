@@ -30,23 +30,11 @@ function Main(props) {
       {props.toggle.map((value, index) => {
         return (
           <div className={"listitem" + index}>
-            {value ? (
+            {!value ? (
               <>
                 {" "}
-                <img src={green} alt="" className="green" />
-                <p className="text">What's Allowed</p>
-                <img
-                  src={arrowdown}
-                  alt=""
-                  className="arrow"
-                  onClick={() => handleToggle(index)}
-                />
-              </>
-            ) : (
-              <>
-                {" "}
-                <img src={biggreen} alt="" className="green"  />
-                <p className="textopen">
+                <img src={biggreen} alt="" className="green" style={{zIndex:1}} />
+                <p className="textopen" style={{zIndex:2}}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Labore consequuntur voluptatibus, sapiente deserunt in
                   consectetur exercitationem ipsa cupiditate consequatur soluta
@@ -55,12 +43,23 @@ function Main(props) {
                 </p>
                 <img
                   src={arrowup}
+                  style={{zIndex:2}}
                   alt=""
                   className="arrow"
                   onClick={() => handleToggle(index)}
                 />
               </>
-            )}
+            ):(<>
+            {" "}
+            <img src={green} alt="" className="green" />
+            <p className="text">What's Allowed</p>
+            <img
+              src={arrowdown}
+              alt=""
+              className="arrow"
+              onClick={() => handleToggle(index)}
+            />
+          </>)}
           </div>
         );
       })}
