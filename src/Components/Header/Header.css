@@ -2,14 +2,14 @@
   position: fixed;
   margin: -108px;
   width: 113%;
-  z-index: 1;
+  z-index: 3;
 }
 .navigation {
   position: fixed;
-  opacity: 3;
+  
   margin-left: 407px;
   margin-top: 30px;
-  z-index: 2;
+  z-index: 3;
 }
 .orangeup {
   margin: -150px;
