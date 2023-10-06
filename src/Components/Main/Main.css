@@ -1,11 +1,11 @@
 .topext {
   position: absolute;
   margin-top: -2179px;
-  margin-left: -150px;
+  margin-left: -164px;
 }
 .banner {
   margin-top: -2023px;
-  margin-left: -484px;
+  margin-left: -498px;
   position: absolute;
 }
 .leftbar {
@@ -13,14 +13,14 @@
   overflow: hidden;
   position: absolute;
   margin-top: -1750px;
-  margin-left: 302px;
+  margin-left: 288px;
 }
 .rightbar {
   height: 1319px;
   overflow: hidden;
   position: absolute;
   margin-top: -1750px;
-  margin-left: 1245px;
+  margin-left: 1231px;
 }
 .company {
   position: absolute;
@@ -40,6 +40,7 @@
   margin-left: 652px;
 }
 .freq {
+  z-index: 3;
   position: absolute;
   text-align: center;
   font: normal normal normal 45px/64px Modesto Condensed;
@@ -50,54 +51,54 @@
   margin-top: -1494px;
   margin-left: 445px;
 }
-.green{
-    position: relative;
+.green {
+  position: relative;
 }
-.arrow{
-    margin-left: -47px;
-    margin-top: 33px;
-    position: absolute;
+.arrow {
+  margin-left: -47px;
+  margin-top: 33px;
+  position: absolute;
+  z-index: 2;
 }
-.open{
-    width: 600px;
-    height: 153px;
-    position: absolute;
-    border: 2px solid black;
-    background-color: rgb(34,161,121);
-    color: white;
+.open {
+  width: 600px;
+  height: 153px;
+  position: absolute;
+  border: 2px solid black;
+  background-color: rgb(34, 161, 121);
+  color: white;
 }
-.text{
-    position: absolute;
-    color: white;
-    font-size: 2em;
-    margin-left: 141px;
-    margin-top: -72px;
+.text {
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  margin-left: 141px;
+  margin-top: -72px;
 }
-.textopen{
-    position: absolute;
-    color: white;
-    margin-left: 30px;
-    margin-top: -292px;
-    font-size: 1.5rem;
+.textopen {
+  position: absolute;
+  color: white;
+  margin-left: 30px;
+  margin-top: -292px;
+  font-size: 1.5rem;
 }
-.listitem0{
-    position: absolute;
-    margin-top: -1396px;
-    margin-left: 498px;
+.listitem0 {
+  position: absolute;
+  margin-top: -1396px;
+  margin-left: 498px;
 }
-.listitem1{
-    position: absolute;
-    margin-top: -1296px;
-    margin-left: 498px; 
+.listitem1 {
+  position: absolute;
+  margin-top: -1296px;
+  margin-left: 498px;
 }
-.listitem2{
-    position: absolute;
-    margin-top: -1196px;
-    margin-left: 498px;
+.listitem2 {
+  position: absolute;
+  margin-top: -1196px;
+  margin-left: 498px;
 }
-.listitem3{
-    position: absolute;
-    margin-top: -1096px;
-    margin-left: 498px;
+.listitem3 {
+  position: absolute;
+  margin-top: -1096px;
+  margin-left: 498px;
 }
-

@@ -10,12 +10,11 @@ import biggreen from "../../img/FAQ Basebig.svg";
 import "./Main.css";
 
 function Main(props) {
-  
   const handleToggle = (x) => {
     props.handleToggle(x);
   };
   return (
-    <div>
+    <div className="main">
       <img src={topext} alt="" className="topext" />
       <img src={banner} alt="" className="banner" />
       <div className="leftbar">
@@ -29,12 +28,17 @@ function Main(props) {
       <div className="freq">FREQUENTLY ASKED QUESTIONS</div>
       {props.toggle.map((value, index) => {
         return (
-          <div className={"listitem" + index}>
+          <div className={"listitem" + index} key={index}>
             {!value ? (
               <>
                 {" "}
-                <img src={biggreen} alt="" className="green" style={{zIndex:1}} />
-                <p className="textopen" style={{zIndex:2}}>
+                <img
+                  src={biggreen}
+                  alt=""
+                  className="green"
+                  style={{ zIndex: 1 }}
+                />
+                <p className="textopen" style={{ zIndex: 2 }}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Labore consequuntur voluptatibus, sapiente deserunt in
                   consectetur exercitationem ipsa cupiditate consequatur soluta
@@ -43,23 +47,25 @@ function Main(props) {
                 </p>
                 <img
                   src={arrowup}
-                  style={{zIndex:2}}
+                  style={{ zIndex: 2 }}
                   alt=""
                   className="arrow"
                   onClick={() => handleToggle(index)}
                 />
               </>
-            ):(<>
-            {" "}
-            <img src={green} alt="" className="green" />
-            <p className="text">What's Allowed</p>
-            <img
-              src={arrowdown}
-              alt=""
-              className="arrow"
-              onClick={() => handleToggle(index)}
-            />
-          </>)}
+            ) : (
+              <>
+                {" "}
+                <img src={green} alt="" className="green" />
+                <p className="text">What's Allowed</p>
+                <img
+                  src={arrowdown}
+                  alt=""
+                  className="arrow"
+                  onClick={() => handleToggle(index)}
+                />
+              </>
+            )}
           </div>
         );
       })}

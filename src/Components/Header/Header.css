@@ -3,24 +3,34 @@
   margin: -108px;
   width: 113%;
   z-index: 1;
-  }
-  .navigation {
-    position: fixed;
-    opacity: 3;
-    margin-left: 407px;
-    margin-top: 30px;
-    z-index: 2;
-  }
-  .orangeup{
-      margin: -150px
-  }
-  .border{
-    margin-top: -734px;
-    width: 111%;
-    position: sticky;
-    z-index: 0;
-  }
-  .fixed{
-    position: fixed;
-  }
-  
+}
+.navigation {
+  position: fixed;
+  opacity: 3;
+  margin-left: 407px;
+  margin-top: 30px;
+  z-index: 2;
+}
+.orangeup {
+  margin: -150px;
+}
+.border {
+  margin-top: -734px;
+  width: 111%;
+  position: sticky;
+  z-index: 0;
+}
+.fixed {
+  position: fixed;
+}
+.topRight {
+  height: 150px;
+  width: 150px;
+  margin-left: 1368px;
+  position: absolute;
+}
+.topLeft {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+}
