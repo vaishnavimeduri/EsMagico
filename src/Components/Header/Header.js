@@ -14,8 +14,9 @@ function Header() {
       <img src={navigation} alt="" className="navigation" />
 
       <img src={orangeup} alt="" className="orangeup" />
-
+<div className="fixed">
       <img src={border} alt="" className="border" />
+      </div>
     </div>
   );
 }
