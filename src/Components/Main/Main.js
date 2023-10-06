@@ -36,7 +36,7 @@ function Main(props) {
                   src={biggreen}
                   alt=""
                   className="green"
-                  style={{ zIndex: 1 }}
+                  style={{ zIndex: 2 }}
                 />
                 <p className="textopen" style={{ zIndex: 2 }}>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -56,13 +56,14 @@ function Main(props) {
             ) : (
               <>
                 {" "}
-                <img src={green} alt="" className="green" />
-                <p className="text">What's Allowed</p>
+                <img src={green} alt="" className="green" style={{ zIndex: 1 }} />
+                <p className="text" style={{ zIndex: 1 }}>What's Allowed</p>
                 <img
                   src={arrowdown}
                   alt=""
                   className="arrow"
                   onClick={() => handleToggle(index)}
+                  style={{ zIndex: 1 }}
                 />
               </>
             )}
